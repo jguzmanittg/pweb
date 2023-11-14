@@ -32,6 +32,12 @@ CREATE TABLE `carros` (
 --
 -- Dumping data for table `carros`
 --
+
+LOCK TABLES `carros` WRITE;
+/*!40000 ALTER TABLE `carros` DISABLE KEYS */;
+INSERT INTO `carros` VALUES ('XYZ-104',100,'Tran sam'),('ZYZASD',10,'ALGUNO'),('XYZ-105',80,'asd');
+/*!40000 ALTER TABLE `carros` ENABLE KEYS */;
+UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -42,4 +48,4 @@ CREATE TABLE `carros` (
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-11-06 19:55:41
+-- Dump completed on 2023-11-14 18:25:32
